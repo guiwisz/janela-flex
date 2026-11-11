@@ -1,0 +1,45 @@
+{
+    "head-drag": { "type": "header", "description": "Arrastar janelas" },
+    "activation": {
+        "type": "combobox",
+        "default": "edge",
+        "description": "Mostrar zonas ao arrastar",
+        "options": {
+            "Ao encostar na borda da tela (ou com Shift)": "edge",
+            "Segurando Shift": "shift",
+            "Segurando Ctrl": "ctrl",
+            "Segurando Alt": "alt",
+            "Sempre (todo arraste encaixa)": "always"
+        }
+    },
+    "span-hint": {
+        "type": "label",
+        "description": "Para ocupar várias zonas: com as zonas visíveis, clique com o botão direito (ou segure Ctrl) e passe sobre as zonas."
+    },
+    "gap": {
+        "type": "spinbutton",
+        "default": 8,
+        "min": 0, "max": 64, "step": 1, "units": "px",
+        "description": "Espaço entre as janelas"
+    },
+    "disable-native-tiling": {
+        "type": "checkbox",
+        "default": true,
+        "description": "Desligar o encaixe nativo do Cinnamon enquanto as zonas estão visíveis"
+    },
+    "head-keys": { "type": "header", "description": "Atalhos de teclado" },
+    "key-next": { "type": "keybinding", "default": "<Super><Alt>Right", "description": "Mover janela para a próxima zona" },
+    "key-prev": { "type": "keybinding", "default": "<Super><Alt>Left", "description": "Mover janela para a zona anterior" },
+    "key-cycle-layout": { "type": "keybinding", "default": "<Super><Alt>Up", "description": "Trocar para o próximo layout" },
+    "key-editor": { "type": "keybinding", "default": "<Super><Alt>e", "description": "Abrir o editor de layouts" },
+    "zone-number-keys": {
+        "type": "checkbox",
+        "default": true,
+        "description": "Super+Alt+1…9 envia a janela para a zona N"
+    },
+    "open-editor": {
+        "type": "button",
+        "description": "Abrir editor de layouts",
+        "callback": "openEditor"
+    }
+}
