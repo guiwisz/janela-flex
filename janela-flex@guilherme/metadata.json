@@ -1,0 +1,16 @@
+{
+    "uuid": "janela-flex@guilherme",
+    "name": "Janela Flex",
+    "description": "Zonas de janelas personalizadas: segure Shift enquanto arrasta uma janela e solte numa zona.",
+    "version": "1.0.0",
+    "cinnamon-version": [
+        "5.4",
+        "5.6",
+        "5.8",
+        "6.0",
+        "6.2",
+        "6.4",
+        "6.6"
+    ],
+    "author": "Guilherme Wiszniewski"
+}
