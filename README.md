@@ -3,8 +3,6 @@
 Zonas de janelas personalizadas para o **Cinnamon** (Linux Mint), no estilo do FancyZones do Windows.
 Você desenha os seus próprios layouts num editor visual e, ao arrastar uma janela, solta ela numa zona.
 
-**Criado por Guilherme Wiszniewski.**
-
 ![Zonas aparecendo ao arrastar uma janela](docs/zonas.png)
 
 ![Editor de layouts](docs/editor.png)
