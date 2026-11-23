@@ -37,8 +37,23 @@ cp -r janela-flex/janela-flex@guilherme ~/.local/share/cinnamon/extensions/
 
 Depois ative a extensão em **Configurações do Sistema → Extensões → Janela Flex**.
 
+Com o `cp`, a extensão fica com uma cópia própria: depois de instalar, você pode apagar a pasta `janela-flex` que foi clonada.
+
 > Se você vai mexer no código, use um link simbólico no lugar do `cp`:
 > `ln -s "$PWD/janela-flex/janela-flex@guilherme" ~/.local/share/cinnamon/extensions/`
+>
+> ⚠️ O link só aponta para a pasta do projeto. Se ela for apagada ou movida, o Cinnamon para de carregar a extensão
+> (no `~/.xsession-errors` aparece `Skipping janela-flex@guilherme: there was a problem trying to read metadata.json`).
+> Nesse caso, recrie o link ou troque por uma cópia com `cp -r`, e desative e reative a extensão.
+
+### Atualizando
+
+Para atualizar uma instalação feita com `cp`, clone de novo, copie por cima e desative e reative a extensão:
+
+```bash
+git clone https://github.com/guiwisz/janela-flex.git
+cp -r janela-flex/janela-flex@guilherme ~/.local/share/cinnamon/extensions/
+```
 
 ## Uso
 
